@@ -8,10 +8,10 @@
 //Mouse events
 
  //mouseover
- const navBar = document.querySelectorAll(".navbar-brand");
+ const navBar = document.querySelectorAll(".nav");
  navBar.forEach(function(item){
      item.addEventListener("mouseover", (event)=>{
-         TweenMax.to(".navbar-brand", 3, 
+         TweenMax.to(".nav", 3, 
          {opacity:1.5, 
            
              scale:1.1, 
@@ -24,9 +24,11 @@
  const form = document.querySelector('.form');
  form.addEventListener('keydown', e => {
      TweenMax.from(form, 3, {
-        y:50,
+        y:-10,
+        ease: Back.easeIn
         });
      e.stopPropagation();
+     
     
  } )
 //  //wheel
