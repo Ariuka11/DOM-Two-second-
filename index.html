@@ -8,8 +8,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <script src="js/index.js" async></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -20,22 +20,28 @@
 
   <header class="main-navigation">
     <div class="container nav-container">
-      <h1 class="logo-heading">Fun Bus</h1>
-      <nav class="nav">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">About Us</a>
-        <a class="nav-link" href="#">Blog</a>
-        <a class="nav-link" href="#">Contact</a>
+     <h1 class="logo-heading">Fun Bus</h1>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">About Us</a>
+        <a class="nav-item nav-link" href="#">Blog</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
       </nav>
     </div>
   </header>
      
   <div class="container home">
     <header class="intro">
-      <img src="img/fun-bus.jpg" alt="bus in the sand">
+      <img src="img/fun-bus.jpg" class="headerImg" alt="bus in the sand">
       <h2>Welcome To Fun Bus!</h2>
       <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
     </header>
+    <form class="form input-group mb-1" type = 'submit'>
+      <input type= 'text'  class="form-control" placeholder="Recipient's username"/>
+      <div class="input-group-append">
+      <button class="btn btn-primary btn-lg">Submit</button>
+    </div>
+    </form>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -43,7 +49,7 @@
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
       <div class="img-content">
-        <img src="img/adventure.jpg" alt="Let's go on an adventure!">
+        <img src="img/adventure.jpg" class = 'map-image' alt="Let's go on an adventure!">
       </div>
     </section>
     <section class="content-section inverse-content">
@@ -67,21 +73,26 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn btn-primary">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn btn-primary">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn btn-primary btn-lg">Sign Me Up!</button>b
       </div>
     </section>
   </div><!-- container -->
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="js/index.js"></script>
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
